@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+
+<h1>회원가입 페이지</h1>
+<hr/>
+
+<form action="/join" method="POST">
+    <input type="text" name="username" placeholder="Username"/> <br><br>
+    <input type="password" name="password" placeholder="Password"/> <br><br>
+    <input type="email" name="email" placeholder="Email"/> <br><br>
+    <button>회원가입</button>
+</form>
+
+<!--
+    username, password, email을 들고 /join 요청한다.
+    그래서 그 받은 것을 아래 메서드에서 뽑아서 사용하면 된다.
+
+    아래 메서드로 가겠지.
+    @GetMapping("/join")
+    public @ResponseBody String join(){
+        return "join";
+    }
+-->
+
+</body>
+</html>

@@ -7,7 +7,6 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-    #    show-sql: true -> system out 으로 출력함
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
