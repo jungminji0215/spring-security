@@ -9,7 +9,15 @@
 <h1>로그인 페이지</h1>
 <hr/>
 
-<form>
+<!--
+    login으로 가니까 시큐리티가 낚아챈다.
+    로그인 버튼을 클릭하면 /login이 발동되면
+    스프링은 IoC 컨테이너에서 UserDetailService로 등록되어있는 타입을 찾는다.
+    PrincipalDetailsService 가 찾아짐!
+    그러면 바로 loadUserByUsername 함수를 호출한다.
+
+ -->
+<form action="/login" method="POST">
     <input type="text" name="username" placeholder="Username"/> <br><br>
     <input type="password" name="password" placeholder="Password"/> <br><br>
     <button>로그인</button>
