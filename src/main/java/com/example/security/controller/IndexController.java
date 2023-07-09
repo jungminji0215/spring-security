@@ -25,6 +25,7 @@ public class IndexController {
     public String index(){
         // 머스테치
         // 기본폴더 src/main/resources/
+
         // 뷰리졸버 설정
         // prefix : templates
         // suffix : .mustache

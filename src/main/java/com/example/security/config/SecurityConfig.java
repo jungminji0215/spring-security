@@ -22,7 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable();
+        http.  csrf().disable();
+
         http.authorizeRequests()
                 // 해당 경로는 인증이 필요, 로그인 한 사람만 들어올 수 있다. 로그인 안하면 403 오류
                 .antMatchers("/user/**").authenticated()
